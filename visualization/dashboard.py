@@ -45,7 +45,7 @@ except ImportError:
 def generate_dashboard(data_dir: str = None, output_path: str = None):
     """Build and save the HTML dashboard."""
     if data_dir is None:
-        data_dir = os.path.join(PROJECT_ROOT, "data", "raw")
+        data_dir = os.path.join(PROJECT_ROOT, "data")
     if output_path is None:
         output_path = os.path.join(PROJECT_ROOT, "visualization", "dashboard.html")
 

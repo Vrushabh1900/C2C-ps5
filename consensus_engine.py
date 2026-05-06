@@ -192,8 +192,8 @@ def main():
     parser = argparse.ArgumentParser(description="Phantom Consensus Engine (Tier S)")
     parser.add_argument(
         "--data-dir",
-        default=os.path.join(PROJECT_ROOT, "data", "raw"),
-        help="Path to the raw data directory",
+        default=os.path.join(PROJECT_ROOT, "data"),
+        help="Path to the input data directory",
     )
     parser.add_argument(
         "--output-dir",
