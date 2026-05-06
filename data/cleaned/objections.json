@@ -1,0 +1,38 @@
+[
+  {
+    "rep_id": "rep_003",
+    "proposal_id": "prop_001",
+    "severity": 8.0,
+    "reason": "Too costly"
+  },
+  {
+    "rep_id": "rep_001",
+    "proposal_id": "prop_002",
+    "severity": 8.0,
+    "reason": "Fiscal concerns"
+  },
+  {
+    "rep_id": "rep_002",
+    "proposal_id": "prop_003",
+    "severity": 5.0,
+    "reason": "Scope unclear"
+  },
+  {
+    "rep_id": "rep_001",
+    "proposal_id": "prop_004",
+    "severity": 0,
+    "reason": "Security risk"
+  },
+  {
+    "rep_id": "rep_003",
+    "proposal_id": "prop_004",
+    "severity": 9.0,
+    "reason": "Overreach"
+  },
+  {
+    "rep_id": "rep_005",
+    "proposal_id": "prop_004",
+    "severity": 0,
+    "reason": "Procedural issues"
+  }
+]

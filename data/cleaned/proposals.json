@@ -1,0 +1,30 @@
+[
+  {
+    "id": "prop_001",
+    "title": "Infrastructure Modernization Act",
+    "sponsor": "rep_001",
+    "priority": 8.0,
+    "category": "infrastructure"
+  },
+  {
+    "id": "prop_002",
+    "title": "Budget Reconciliation Framework",
+    "sponsor": "rep_003",
+    "priority": 10,
+    "category": "finance"
+  },
+  {
+    "id": "prop_003",
+    "title": "Environmental Protection Initiative",
+    "sponsor": "rep_004",
+    "priority": 9.5,
+    "category": "environment"
+  },
+  {
+    "id": "prop_004",
+    "title": "Emergency Response Protocol",
+    "sponsor": "rep_006",
+    "priority": 10,
+    "category": "security"
+  }
+]
