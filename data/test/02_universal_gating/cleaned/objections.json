@@ -1,0 +1,32 @@
+[
+  {
+    "rep_id": "rep_001",
+    "proposal_id": "prop_001",
+    "severity": 10,
+    "reason": "Completely unacceptable"
+  },
+  {
+    "rep_id": "rep_002",
+    "proposal_id": "prop_001",
+    "severity": 10,
+    "reason": "Fiscal disaster"
+  },
+  {
+    "rep_id": "rep_003",
+    "proposal_id": "prop_001",
+    "severity": 10,
+    "reason": "Constitutional violation"
+  },
+  {
+    "rep_id": "rep_004",
+    "proposal_id": "prop_001",
+    "severity": 10,
+    "reason": "Procedural nightmare"
+  },
+  {
+    "rep_id": "rep_003",
+    "proposal_id": "prop_002",
+    "severity": 2.0,
+    "reason": "Minor scope issue"
+  }
+]

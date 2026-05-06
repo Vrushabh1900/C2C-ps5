@@ -1,0 +1,14 @@
+[
+  {
+    "rep_id": "rep_003",
+    "proposal_id": "prop_001",
+    "severity": 4.0,
+    "reason": "Budget concern"
+  },
+  {
+    "rep_id": "rep_001",
+    "proposal_id": "prop_003",
+    "severity": 3.0,
+    "reason": "Minor issues"
+  }
+]

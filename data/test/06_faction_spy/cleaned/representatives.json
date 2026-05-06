@@ -1,0 +1,32 @@
+[
+  {
+    "id": "rep_001",
+    "name": "Senator Loyalist",
+    "faction": "Progressives",
+    "influence": 75.0
+  },
+  {
+    "id": "rep_002",
+    "name": "Councilor Mole",
+    "faction": "Progressives",
+    "influence": 88.0
+  },
+  {
+    "id": "rep_003",
+    "name": "Minister Steadfast",
+    "faction": "Progressives",
+    "influence": 60.0
+  },
+  {
+    "id": "rep_004",
+    "name": "Delegate Outsider",
+    "faction": "Conservatives",
+    "influence": 50.0
+  },
+  {
+    "id": "rep_005",
+    "name": "Ambassador Neutral",
+    "faction": "Moderates",
+    "influence": 65.0
+  }
+]

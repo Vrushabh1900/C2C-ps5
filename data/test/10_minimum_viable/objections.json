@@ -1,0 +1,4 @@
+[
+  {"rep_id": "rep_001", "proposal_id": "prop_002", "severity": 10, "reason": "Completely unacceptable"},
+  {"rep_id": "rep_002", "proposal_id": "prop_002", "severity": 10, "reason": "Even the sponsor objects"}
+]

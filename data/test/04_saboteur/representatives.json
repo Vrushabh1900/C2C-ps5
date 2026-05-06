@@ -1,0 +1,6 @@
+[
+  {"id": "rep_001", "name": "Senator Powerhouse", "faction": "Progressives", "influence": 95},
+  {"id": "rep_002", "name": "Councilor Titan", "faction": "Moderates", "influence": 90},
+  {"id": "rep_003", "name": "Minister Quiet", "faction": "Conservatives", "influence": 30},
+  {"id": "rep_004", "name": "Delegate Small", "faction": "Independents", "influence": 25}
+]

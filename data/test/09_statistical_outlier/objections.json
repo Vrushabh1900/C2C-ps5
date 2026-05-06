@@ -1,0 +1,32 @@
+[
+  {
+    "rep_id": "rep_011",
+    "proposal_id": "prop_006",
+    "severity": 3,
+    "reason": "Minor concern"
+  },
+  {
+    "rep_id": "rep_014",
+    "proposal_id": "prop_005",
+    "severity": 1,
+    "reason": "Minor concern"
+  },
+  {
+    "rep_id": "rep_039",
+    "proposal_id": "prop_003",
+    "severity": 2,
+    "reason": "Minor concern"
+  },
+  {
+    "rep_id": "rep_011",
+    "proposal_id": "prop_008",
+    "severity": 4,
+    "reason": "Minor concern"
+  },
+  {
+    "rep_id": "rep_018",
+    "proposal_id": "prop_009",
+    "severity": 2,
+    "reason": "Minor concern"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "prop_001",
+    "title": "The Only Good Bill",
+    "sponsor": "rep_001",
+    "priority": 7.0,
+    "category": "reform"
+  },
+  {
+    "id": "prop_002",
+    "title": "The Poison Pill",
+    "sponsor": "rep_002",
+    "priority": 10,
+    "category": "finance"
+  }
+]

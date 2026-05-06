@@ -1,0 +1,23 @@
+[
+  {
+    "id": "prop_001",
+    "title": "National Defense Overhaul",
+    "sponsor": "rep_003",
+    "priority": 9.0,
+    "category": "defense"
+  },
+  {
+    "id": "prop_002",
+    "title": "Education Reform Package",
+    "sponsor": "rep_004",
+    "priority": 8.0,
+    "category": "education"
+  },
+  {
+    "id": "prop_003",
+    "title": "Infrastructure Bond",
+    "sponsor": "rep_001",
+    "priority": 7.0,
+    "category": "infrastructure"
+  }
+]

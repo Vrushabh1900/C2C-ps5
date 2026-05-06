@@ -1,17 +1,26 @@
 """
-Module: consensus
+Module: consensus (Tier S)
 Issues addressed: #17 (Formulate Consensus Output), #19 (Edge Cases)
+
+Tier S upgrade:
+  - Supporter Coherence Validation: A representative cannot be in
+    supporting_reps if they have an objection severity > 5 for ANY
+    proposal in the final_agreement.
 
 Core decision-making loop that produces the final stable agreement.
 """
 
 from typing import List, Dict, Any, Set
 
+# Tier S: Coherence threshold
+COHERENCE_SEVERITY_THRESH = 5  # Objection severity > this -> incoherent supporter
+
 
 def formulate_agreement(
     proposals: List[Dict[str, Any]],
     reps: List[Dict[str, Any]],
     relations: List[Dict[str, Any]],
+    objections: List[Dict[str, Any]],
     poison_pills: Set[str],
     excluded_reps: Set[str],
     alliances: List[List[str]],
@@ -25,7 +34,8 @@ def formulate_agreement(
     2. Rank remaining proposals by viability (descending).
     3. Select proposals with viability > 0 and valid sponsor.
     4. Supporting reps = sponsors + their allies (minus excluded).
-    5. Empty data → empty result.
+    5. Tier S Coherence: Remove reps who object (severity > 5) to any selected proposal.
+    6. Empty data -> empty result.
     """
     if not proposals or not reps:
         return _empty_result()
@@ -59,6 +69,25 @@ def formulate_agreement(
 
     if not selected_proposals:
         return _empty_result()
+
+    # ================================================================
+    # Tier S: Supporter Coherence Validation
+    # A rep cannot support the agreement if they have a strong objection
+    # (severity > 5) to ANY proposal in the final agreement.
+    # ================================================================
+    selected_set = set(selected_proposals)
+    incoherent_reps: Set[str] = set()
+    for obj in objections:
+        rep_id = obj.get("rep_id", "")
+        prop_id = obj.get("proposal_id", "")
+        severity = obj.get("severity", 0)
+        if rep_id in supporting_reps and prop_id in selected_set:
+            if severity > COHERENCE_SEVERITY_THRESH:
+                incoherent_reps.add(rep_id)
+                print(f"[TIER-S] Coherence violation: {rep_id} objects to "
+                      f"{prop_id} (severity={severity}) -- REMOVED from supporters")
+
+    supporting_reps -= incoherent_reps
 
     return {
         "final_agreement": {

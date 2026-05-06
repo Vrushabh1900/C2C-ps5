@@ -1,0 +1,6 @@
+[
+  {"id": "rep_001", "name": "Senator Safe", "faction": "Moderates", "influence": 70},
+  {"id": "rep_002", "name": "Councilor Bridge", "faction": "Moderates", "influence": 65},
+  {"id": "rep_003", "name": "Minister Trojan", "faction": "Progressives", "influence": 92},
+  {"id": "rep_004", "name": "Delegate Clean", "faction": "Conservatives", "influence": 50}
+]

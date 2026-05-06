@@ -1,15 +1,22 @@
 #!/usr/bin/env python3
 """
-consensus_engine.py  –  Phantom Consensus  –  Primary Entry Point
+consensus_engine.py  --  Phantom Consensus (Tier S)  --  Primary Entry Point
 
 Executes the full pipeline:
-  1. Data Loading        (Issues #2–#5)
-  2. Data Sanitization   (Issues #6–#9)
-  3. Feature Engineering  (Issues #10–#11)
-  4. Strategic Logic      (Issues #12–#16)
-  5. Consensus Building   (Issues #17, #19)
-  6. Output Formatting    (Issue #18)
-  7. Performance-safe     (Issue #20)
+  1. Data Loading          (Issues #2-#5)
+  2. Data Sanitization     (Issues #6-#9)
+  3. Feature Engineering   (Issues #10-#11)
+  4. Strategic Logic       (Issues #12-#16) + Tier S upgrades
+  5. Consensus Building    (Issues #17, #19) + Supporter Coherence
+  6. Output Formatting     (Issue #18)
+  7. Performance-safe      (Issue #20)
+
+Tier S Layers:
+  - Explicit False Friend Detection (trust parity)
+  - Supporter Coherence Validation (objection severity gate)
+  - Faction Infiltrator Detection (>0.80 intra-faction betrayal)
+  - Relative Risk Thresholds (Z-score Statistical Climate Model)
+  - Graph-Based Cascading Risk (secondary betrayal propagation)
 
 Usage:
     python consensus_engine.py [--data-dir DATA_DIR] [--output-dir OUTPUT_DIR]
@@ -48,20 +55,23 @@ from src.strategic_logic import (
     detect_trojan_horses,
     detect_poison_pills,
     detect_alliances,
+    detect_false_friends,
     detect_faction_infiltrators,
     detect_cascading_betrayal_risks,
+    compute_statistical_risk_exclusions,
+    compute_graph_cascading_risk,
 )
 from src.consensus import formulate_agreement
 from src.output_formatter import write_result
 
 
 def run_pipeline(data_dir: str, output_dir: str) -> dict:
-    """Execute the full Phantom Consensus pipeline."""
+    """Execute the full Phantom Consensus pipeline (Tier S)."""
     t0 = time.perf_counter()
 
     # ==== LAYER 1: DATA LOADING ====
     print("=" * 60)
-    print("LAYER 1 – DATA LOADING")
+    print("LAYER 1 -- DATA LOADING")
     print("=" * 60)
     raw_reps = load_representatives(data_dir)
     raw_props = load_proposals(data_dir)
@@ -72,7 +82,7 @@ def run_pipeline(data_dir: str, output_dir: str) -> dict:
 
     # ==== LAYER 1b: DATA SANITIZATION ====
     print("\n" + "=" * 60)
-    print("LAYER 1b – DATA SANITIZATION")
+    print("LAYER 1b -- DATA SANITIZATION")
     print("=" * 60)
     reps = sanitize_representatives(raw_reps)
     props = sanitize_proposals(raw_props)
@@ -91,7 +101,7 @@ def run_pipeline(data_dir: str, output_dir: str) -> dict:
 
     # ==== LAYER 2: FEATURE ENGINEERING ====
     print("\n" + "=" * 60)
-    print("LAYER 2 – FEATURE ENGINEERING")
+    print("LAYER 2 -- FEATURE ENGINEERING")
     print("=" * 60)
     influence_map = build_influence_map(reps)
     rels = compute_relationship_scores(rels)
@@ -102,33 +112,66 @@ def run_pipeline(data_dir: str, output_dir: str) -> dict:
         print(f"  {p['id']}: priority={p['priority']}, "
               f"controversy={p['controversy']:.2f}, viability={p['viability']:.2f}")
 
-    # ==== LAYER 4: STRATEGIC LOGIC ====
+    # ==== LAYER 4: STRATEGIC LOGIC (TIER S) ====
     print("\n" + "=" * 60)
-    print("LAYER 4 – STRATEGIC LOGIC (ANTI-TRAP DETECTION)")
+    print("LAYER 4 -- STRATEGIC LOGIC (TIER S ANTI-TRAP DETECTION)")
     print("=" * 60)
 
+    # --- Phase 1: Core detections ---
+    print("\n  --- Phase 1: Core Threat Detection ---")
     trojan_horses = detect_trojan_horses(reps, rels)
     infiltrators = detect_faction_infiltrators(reps, rels)
-    cascade_risks = detect_cascading_betrayal_risks(rels, reps, already_excluded=trojan_horses | infiltrators)
+
+    # --- Phase 2: Tier S - Relative Risk (Z-score) ---
+    print("\n  --- Phase 2: Tier S - Statistical Climate Model ---")
+    zscore_excluded = compute_statistical_risk_exclusions(
+        reps, rels, already_excluded=trojan_horses | infiltrators)
+
+    # --- Phase 3: Tier S - Graph-Based Cascading Risk ---
+    print("\n  --- Phase 3: Tier S - Graph-Based Cascading Risk ---")
+    graph_cascade = compute_graph_cascading_risk(
+        reps, rels, trojan_horses,
+        already_excluded=trojan_horses | infiltrators | zscore_excluded)
+
+    # --- Phase 4: Legacy chain-based cascading ---
+    print("\n  --- Phase 4: Chain-Based Cascading Betrayal ---")
+    chain_cascade = detect_cascading_betrayal_risks(
+        rels, reps,
+        already_excluded=trojan_horses | infiltrators | zscore_excluded | graph_cascade)
 
     # Union of all excluded representatives
-    excluded_reps = trojan_horses | infiltrators | cascade_risks
-    print(f"  Excluded reps (total): {sorted(excluded_reps)}")
+    excluded_reps = (trojan_horses | infiltrators | zscore_excluded
+                     | graph_cascade | chain_cascade)
+    print(f"\n  [SUMMARY] Excluded reps (total): {sorted(excluded_reps)}")
+    print(f"    Trojan Horses:     {sorted(trojan_horses)}")
+    print(f"    Infiltrators:      {sorted(infiltrators)}")
+    print(f"    Z-score excluded:  {sorted(zscore_excluded)}")
+    print(f"    Graph cascade:     {sorted(graph_cascade)}")
+    print(f"    Chain cascade:     {sorted(chain_cascade)}")
 
+    # --- Poison Pill detection ---
+    print("\n  --- Poison Pill Detection ---")
     poison_pills = detect_poison_pills(props)
     print(f"  Poison Pill proposals: {sorted(poison_pills)}")
 
-    alliances = detect_alliances(reps, rels, excluded_reps)
+    # --- Phase 5: Tier S - False Friend Detection ---
+    print("\n  --- Phase 5: Tier S - False Friend Detection ---")
+    false_friend_pairs = detect_false_friends(reps, rels, excluded_reps)
+
+    # --- Alliance Detection (with False Friend filtering) ---
+    print("\n  --- Alliance Detection ---")
+    alliances = detect_alliances(reps, rels, excluded_reps, false_friend_pairs)
     print(f"  Genuine alliances: {alliances}")
 
-    # ==== CONSENSUS ====
+    # ==== CONSENSUS (with Tier S Coherence) ====
     print("\n" + "=" * 60)
-    print("CONSENSUS FORMULATION")
+    print("CONSENSUS FORMULATION (TIER S - WITH COHERENCE CHECK)")
     print("=" * 60)
     result = formulate_agreement(
         proposals=props,
         reps=reps,
         relations=rels,
+        objections=objs,
         poison_pills=poison_pills,
         excluded_reps=excluded_reps,
         alliances=alliances,
@@ -146,7 +189,7 @@ def run_pipeline(data_dir: str, output_dir: str) -> dict:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Phantom Consensus Engine")
+    parser = argparse.ArgumentParser(description="Phantom Consensus Engine (Tier S)")
     parser.add_argument(
         "--data-dir",
         default=os.path.join(PROJECT_ROOT, "data", "raw"),

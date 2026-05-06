@@ -1,0 +1,6 @@
+[
+  {"id": "rep_001", "name": "Senator Vega", "faction": "Progressives", "influence": 80},
+  {"id": "rep_002", "name": "Councilor Ward", "faction": "Moderates", "influence": 90},
+  {"id": "rep_003", "name": "Minister Xu", "faction": "Conservatives", "influence": 75},
+  {"id": "rep_004", "name": "Delegate York", "faction": "Progressives", "influence": 60}
+]

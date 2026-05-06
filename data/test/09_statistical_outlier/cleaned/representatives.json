@@ -1,0 +1,302 @@
+[
+  {
+    "id": "rep_001",
+    "name": "Representative_001",
+    "faction": "Moderates",
+    "influence": 80.0
+  },
+  {
+    "id": "rep_002",
+    "name": "Representative_002",
+    "faction": "Conservatives",
+    "influence": 47.0
+  },
+  {
+    "id": "rep_003",
+    "name": "Representative_003",
+    "faction": "Independents",
+    "influence": 41.0
+  },
+  {
+    "id": "rep_004",
+    "name": "Representative_004",
+    "faction": "Progressives",
+    "influence": 87.0
+  },
+  {
+    "id": "rep_005",
+    "name": "Representative_005",
+    "faction": "Moderates",
+    "influence": 57.0
+  },
+  {
+    "id": "rep_006",
+    "name": "Representative_006",
+    "faction": "Conservatives",
+    "influence": 55.0
+  },
+  {
+    "id": "rep_007",
+    "name": "Representative_007",
+    "faction": "Independents",
+    "influence": 54.0
+  },
+  {
+    "id": "rep_008",
+    "name": "Representative_008",
+    "faction": "Progressives",
+    "influence": 48.0
+  },
+  {
+    "id": "rep_009",
+    "name": "Representative_009",
+    "faction": "Moderates",
+    "influence": 87.0
+  },
+  {
+    "id": "rep_010",
+    "name": "Representative_010",
+    "faction": "Conservatives",
+    "influence": 46.0
+  },
+  {
+    "id": "rep_011",
+    "name": "Representative_011",
+    "faction": "Independents",
+    "influence": 83.0
+  },
+  {
+    "id": "rep_012",
+    "name": "Representative_012",
+    "faction": "Progressives",
+    "influence": 87.0
+  },
+  {
+    "id": "rep_013",
+    "name": "Representative_013",
+    "faction": "Moderates",
+    "influence": 74.0
+  },
+  {
+    "id": "rep_014",
+    "name": "Representative_014",
+    "faction": "Conservatives",
+    "influence": 45.0
+  },
+  {
+    "id": "rep_015",
+    "name": "Representative_015",
+    "faction": "Independents",
+    "influence": 77.0
+  },
+  {
+    "id": "rep_016",
+    "name": "Representative_016",
+    "faction": "Progressives",
+    "influence": 67.0
+  },
+  {
+    "id": "rep_017",
+    "name": "Representative_017",
+    "faction": "Moderates",
+    "influence": 42.0
+  },
+  {
+    "id": "rep_018",
+    "name": "Representative_018",
+    "faction": "Conservatives",
+    "influence": 41.0
+  },
+  {
+    "id": "rep_019",
+    "name": "Representative_019",
+    "faction": "Independents",
+    "influence": 45.0
+  },
+  {
+    "id": "rep_020",
+    "name": "Representative_020",
+    "faction": "Progressives",
+    "influence": 53.0
+  },
+  {
+    "id": "rep_021",
+    "name": "Representative_021",
+    "faction": "Moderates",
+    "influence": 54.0
+  },
+  {
+    "id": "rep_022",
+    "name": "Representative_022",
+    "faction": "Conservatives",
+    "influence": 72.0
+  },
+  {
+    "id": "rep_023",
+    "name": "Representative_023",
+    "faction": "Independents",
+    "influence": 78.0
+  },
+  {
+    "id": "rep_024",
+    "name": "Representative_024",
+    "faction": "Progressives",
+    "influence": 41.0
+  },
+  {
+    "id": "rep_025",
+    "name": "Representative_025",
+    "faction": "Moderates",
+    "influence": 75.0
+  },
+  {
+    "id": "rep_026",
+    "name": "Representative_026",
+    "faction": "Conservatives",
+    "influence": 52.0
+  },
+  {
+    "id": "rep_027",
+    "name": "Representative_027",
+    "faction": "Independents",
+    "influence": 85.0
+  },
+  {
+    "id": "rep_028",
+    "name": "Representative_028",
+    "faction": "Progressives",
+    "influence": 81.0
+  },
+  {
+    "id": "rep_029",
+    "name": "Representative_029",
+    "faction": "Moderates",
+    "influence": 84.0
+  },
+  {
+    "id": "rep_030",
+    "name": "Representative_030",
+    "faction": "Conservatives",
+    "influence": 74.0
+  },
+  {
+    "id": "rep_031",
+    "name": "Representative_031",
+    "faction": "Independents",
+    "influence": 66.0
+  },
+  {
+    "id": "rep_032",
+    "name": "Representative_032",
+    "faction": "Progressives",
+    "influence": 54.0
+  },
+  {
+    "id": "rep_033",
+    "name": "Representative_033",
+    "faction": "Moderates",
+    "influence": 68.0
+  },
+  {
+    "id": "rep_034",
+    "name": "Representative_034",
+    "faction": "Conservatives",
+    "influence": 77.0
+  },
+  {
+    "id": "rep_035",
+    "name": "Representative_035",
+    "faction": "Independents",
+    "influence": 57.0
+  },
+  {
+    "id": "rep_036",
+    "name": "Representative_036",
+    "faction": "Progressives",
+    "influence": 40.0
+  },
+  {
+    "id": "rep_037",
+    "name": "Representative_037",
+    "faction": "Moderates",
+    "influence": 88.0
+  },
+  {
+    "id": "rep_038",
+    "name": "Representative_038",
+    "faction": "Conservatives",
+    "influence": 50.0
+  },
+  {
+    "id": "rep_039",
+    "name": "Representative_039",
+    "faction": "Independents",
+    "influence": 84.0
+  },
+  {
+    "id": "rep_040",
+    "name": "Representative_040",
+    "faction": "Progressives",
+    "influence": 67.0
+  },
+  {
+    "id": "rep_041",
+    "name": "Representative_041",
+    "faction": "Moderates",
+    "influence": 61.0
+  },
+  {
+    "id": "rep_042",
+    "name": "Representative_042",
+    "faction": "Conservatives",
+    "influence": 57.0
+  },
+  {
+    "id": "rep_043",
+    "name": "Representative_043",
+    "faction": "Independents",
+    "influence": 49.0
+  },
+  {
+    "id": "rep_044",
+    "name": "Representative_044",
+    "faction": "Progressives",
+    "influence": 53.0
+  },
+  {
+    "id": "rep_045",
+    "name": "Representative_045",
+    "faction": "Moderates",
+    "influence": 88.0
+  },
+  {
+    "id": "rep_046",
+    "name": "Representative_046",
+    "faction": "Conservatives",
+    "influence": 61.0
+  },
+  {
+    "id": "rep_047",
+    "name": "Representative_047",
+    "faction": "Independents",
+    "influence": 46.0
+  },
+  {
+    "id": "rep_048",
+    "name": "Representative_048",
+    "faction": "Progressives",
+    "influence": 45.0
+  },
+  {
+    "id": "rep_049",
+    "name": "Representative_049",
+    "faction": "Moderates",
+    "influence": 64.0
+  },
+  {
+    "id": "rep_050",
+    "name": "Representative_050",
+    "faction": "Conservatives",
+    "influence": 46.0
+  }
+]

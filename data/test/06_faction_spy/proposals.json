@@ -1,0 +1,5 @@
+[
+  {"id": "prop_001", "title": "Progressive Manifesto", "sponsor": "rep_001", "priority": 9, "category": "policy"},
+  {"id": "prop_002", "title": "Mole's Secret Agenda", "sponsor": "rep_002", "priority": 8, "category": "reform"},
+  {"id": "prop_003", "title": "Bipartisan Bridge Act", "sponsor": "rep_005", "priority": 7, "category": "cooperation"}
+]

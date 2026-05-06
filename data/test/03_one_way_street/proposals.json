@@ -1,0 +1,4 @@
+[
+  {"id": "prop_001", "title": "Joint Initiative Act", "sponsor": "rep_001", "priority": 8, "category": "cooperation"},
+  {"id": "prop_002", "title": "Independent Research Grant", "sponsor": "rep_003", "priority": 7, "category": "science"}
+]

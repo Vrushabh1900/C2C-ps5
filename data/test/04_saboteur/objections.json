@@ -1,0 +1,7 @@
+[
+  {"rep_id": "rep_001", "proposal_id": "prop_001", "severity": 9, "reason": "Budget overreach"},
+  {"rep_id": "rep_001", "proposal_id": "prop_002", "severity": 8, "reason": "Scope too broad"},
+  {"rep_id": "rep_002", "proposal_id": "prop_001", "severity": 10, "reason": "Security risk"},
+  {"rep_id": "rep_002", "proposal_id": "prop_002", "severity": 7, "reason": "Implementation concerns"},
+  {"rep_id": "rep_002", "proposal_id": "prop_003", "severity": 6, "reason": "Fiscal impact"}
+]

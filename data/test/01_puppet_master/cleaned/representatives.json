@@ -1,0 +1,32 @@
+[
+  {
+    "id": "rep_001",
+    "name": "Senator Alpha",
+    "faction": "Moderates",
+    "influence": 70.0
+  },
+  {
+    "id": "rep_002",
+    "name": "Councilor Beta",
+    "faction": "Moderates",
+    "influence": 65.0
+  },
+  {
+    "id": "rep_003",
+    "name": "Minister Gamma",
+    "faction": "Progressives",
+    "influence": 55.0
+  },
+  {
+    "id": "rep_004",
+    "name": "The Puppet Master",
+    "faction": "Progressives",
+    "influence": 98.0
+  },
+  {
+    "id": "rep_005",
+    "name": "Delegate Delta",
+    "faction": "Conservatives",
+    "influence": 40.0
+  }
+]

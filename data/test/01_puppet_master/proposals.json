@@ -1,0 +1,5 @@
+[
+  {"id": "prop_001", "title": "Economic Reform Act", "sponsor": "rep_001", "priority": 8, "category": "finance"},
+  {"id": "prop_002", "title": "Puppet Master's Grand Plan", "sponsor": "rep_004", "priority": 9, "category": "infrastructure"},
+  {"id": "prop_003", "title": "Community Health Initiative", "sponsor": "rep_003", "priority": 7, "category": "health"}
+]

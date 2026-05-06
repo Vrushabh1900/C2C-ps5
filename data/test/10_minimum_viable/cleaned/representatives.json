@@ -1,0 +1,14 @@
+[
+  {
+    "id": "rep_001",
+    "name": "The Last Good One",
+    "faction": "Moderates",
+    "influence": 60.0
+  },
+  {
+    "id": "rep_002",
+    "name": "The Trojan",
+    "faction": "Moderates",
+    "influence": 95.0
+  }
+]

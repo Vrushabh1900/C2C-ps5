@@ -1,0 +1,16 @@
+[
+  {
+    "id": "prop_001",
+    "title": "Unity Accord",
+    "sponsor": "rep_001",
+    "priority": 8.0,
+    "category": "cooperation"
+  },
+  {
+    "id": "prop_002",
+    "title": "Peace Framework",
+    "sponsor": "rep_002",
+    "priority": 7.0,
+    "category": "diplomacy"
+  }
+]

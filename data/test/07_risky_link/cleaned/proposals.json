@@ -1,0 +1,23 @@
+[
+  {
+    "id": "prop_001",
+    "title": "Moderate Agenda Act",
+    "sponsor": "rep_001",
+    "priority": 8.0,
+    "category": "policy"
+  },
+  {
+    "id": "prop_002",
+    "title": "Bridge Builder Bill",
+    "sponsor": "rep_002",
+    "priority": 7.0,
+    "category": "cooperation"
+  },
+  {
+    "id": "prop_003",
+    "title": "Trojan's Prize",
+    "sponsor": "rep_003",
+    "priority": 10,
+    "category": "infrastructure"
+  }
+]

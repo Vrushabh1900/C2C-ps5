@@ -1,0 +1,7 @@
+[
+  {"id": "prop_001", "title": "Valid Proposal", "sponsor": "rep_001", "priority": 8, "category": "finance"},
+  {"id": "prop_002", "title": "Ghost Sponsor Bill", "sponsor": "rep_999", "priority": 10, "category": "defense"},
+  {"id": "PROP_003", "title": "Case Mismatch Bill", "sponsor": "REP_002", "priority": 7, "category": "health"},
+  {"id": "prop_004", "title": "Another Ghost", "sponsor": "rep_888", "priority": 9, "category": "security"},
+  {"id": "prop_005", "title": "Space Sponsor Bill", "sponsor": " rep_003", "priority": 6, "category": "education"}
+]

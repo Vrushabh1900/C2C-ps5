@@ -1,0 +1,26 @@
+[
+  {
+    "id": "rep_001",
+    "name": "Senator Alone",
+    "faction": "Progressives",
+    "influence": 80.0
+  },
+  {
+    "id": "rep_002",
+    "name": "Councilor Island",
+    "faction": "Moderates",
+    "influence": 75.0
+  },
+  {
+    "id": "rep_003",
+    "name": "Minister Isolated",
+    "faction": "Conservatives",
+    "influence": 70.0
+  },
+  {
+    "id": "rep_004",
+    "name": "Delegate Solo",
+    "faction": "Independents",
+    "influence": 60.0
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "rep_001",
+    "name": "Senator Case",
+    "faction": "Moderates",
+    "influence": 70.0
+  },
+  {
+    "id": "rep_002",
+    "name": "Councilor Mixed",
+    "faction": "Progressives",
+    "influence": 80.0
+  },
+  {
+    "id": "rep_003",
+    "name": "Minister Valid",
+    "faction": "Conservatives",
+    "influence": 55.0
+  },
+  {
+    "id": "rep_004",
+    "name": "Delegate Ghost",
+    "faction": "Independents",
+    "influence": 0
+  }
+]

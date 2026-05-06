@@ -1,0 +1,32 @@
+[
+  {
+    "rep_id": "rep_001",
+    "proposal_id": "prop_001",
+    "severity": 9.0,
+    "reason": "Budget overreach"
+  },
+  {
+    "rep_id": "rep_001",
+    "proposal_id": "prop_002",
+    "severity": 8.0,
+    "reason": "Scope too broad"
+  },
+  {
+    "rep_id": "rep_002",
+    "proposal_id": "prop_001",
+    "severity": 10,
+    "reason": "Security risk"
+  },
+  {
+    "rep_id": "rep_002",
+    "proposal_id": "prop_002",
+    "severity": 7.0,
+    "reason": "Implementation concerns"
+  },
+  {
+    "rep_id": "rep_002",
+    "proposal_id": "prop_003",
+    "severity": 6.0,
+    "reason": "Fiscal impact"
+  }
+]

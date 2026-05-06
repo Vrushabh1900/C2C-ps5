@@ -1,0 +1,5 @@
+[
+  {"id": "prop_001", "title": "The Untouchable Bill", "sponsor": "rep_002", "priority": 10, "category": "finance"},
+  {"id": "prop_002", "title": "Modest Parks Improvement", "sponsor": "rep_001", "priority": 5, "category": "environment"},
+  {"id": "prop_003", "title": "Library Funding Act", "sponsor": "rep_004", "priority": 6, "category": "education"}
+]

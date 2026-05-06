@@ -1,0 +1,72 @@
+[
+  {
+    "id": "prop_001",
+    "title": "Proposal 1",
+    "sponsor": "rep_023",
+    "priority": 7,
+    "category": "infrastructure"
+  },
+  {
+    "id": "prop_002",
+    "title": "Proposal 2",
+    "sponsor": "rep_017",
+    "priority": 5,
+    "category": "education"
+  },
+  {
+    "id": "prop_003",
+    "title": "Proposal 3",
+    "sponsor": "rep_035",
+    "priority": 5,
+    "category": "education"
+  },
+  {
+    "id": "prop_004",
+    "title": "Proposal 4",
+    "sponsor": "rep_006",
+    "priority": 9,
+    "category": "defense"
+  },
+  {
+    "id": "prop_005",
+    "title": "Proposal 5",
+    "sponsor": "rep_041",
+    "priority": 9,
+    "category": "defense"
+  },
+  {
+    "id": "prop_006",
+    "title": "Proposal 6",
+    "sponsor": "rep_037",
+    "priority": 6,
+    "category": "finance"
+  },
+  {
+    "id": "prop_007",
+    "title": "Proposal 7",
+    "sponsor": "rep_003",
+    "priority": 10,
+    "category": "health"
+  },
+  {
+    "id": "prop_008",
+    "title": "Proposal 8",
+    "sponsor": "rep_019",
+    "priority": 5,
+    "category": "health"
+  },
+  {
+    "id": "prop_009",
+    "title": "Proposal 9",
+    "sponsor": "rep_007",
+    "priority": 8,
+    "category": "defense"
+  },
+  {
+    "id": "prop_010",
+    "title": "Proposal 10",
+    "sponsor": "rep_030",
+    "priority": 10,
+    "category": "defense"
+  }
+]

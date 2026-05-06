@@ -1,0 +1,23 @@
+[
+  {
+    "id": "prop_001",
+    "title": "Valid Proposal",
+    "sponsor": "rep_001",
+    "priority": 8.0,
+    "category": "finance"
+  },
+  {
+    "id": "prop_003",
+    "title": "Case Mismatch Bill",
+    "sponsor": "rep_002",
+    "priority": 7.0,
+    "category": "health"
+  },
+  {
+    "id": "prop_005",
+    "title": "Space Sponsor Bill",
+    "sponsor": "rep_003",
+    "priority": 6.0,
+    "category": "education"
+  }
+]
