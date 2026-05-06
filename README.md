@@ -9,38 +9,73 @@
 
 ## Architecture Overview
 
-### Data Cleaning Approach
-The engine uses a normalization layer to standardize IDs to lowercase and trim whitespace, ensuring referential integrity. Missing influence values default to `0`, while out-of-range data is clamped to maximum boundaries. Conflicting duplicates are removed, and "ghost references" to non-existent entities are pruned to prevent execution crashes.
+## Consensus Stability Strategy
+
+Our engine employs a **multi-layered defense** to ensure robust and stable consensus formation.
 
 ---
 
-### Alliance Detection Logic
-Alliances are validated through bidirectional trust checks. The engine identifies **"False Friends"** by rejecting pairs with asymmetric trust or high betrayal probabilities.
+### 1. Integrity & Data Sanitization
+We resolve common data issues through a pre-processing layer:
 
-We derive a `relationship_score` using:
-
-relationship_score = trust × (1 - betrayal_prob)
-
-This ensures alliances are built on genuine, mutual stability rather than raw trust values.
-
----
-
-### Proposal Prioritization Strategy
-Proposals are ranked by a `proposal_viability` score that balances raw priority against a weighted `objection_weight`.
-
-The objection weight is calculated as:
-
-objection_weight = Σ(severity × objector_influence)
-
-
-This ensures that objections from powerful representatives significantly reduce a proposal's priority compared to those from low-influence actors.
+- **ID Normalization**: Enforces lowercase consistency  
+- **Null Influence Handling**: Defaults missing values to `0`  
+- **Dirty CSV Handling**: Clamps out-of-range values to `(0–100)`  
+- **Duplicate Removal**: Eliminates redundant proposals  
+- **Ghost Sponsors**: Pruned using referential integrity checks  
 
 ---
 
-### Consensus Stability Strategy
-Our engine uses an adaptive Z-score model to identify betrayal outliers based on the dataset’s "political climate".
+### 2. Strategic Logic (Trap Detection)
+To neutralize malicious or unstable entities:
 
-- **Poison Pills**: Mitigated by rejecting high-priority bills with extreme objection weights.  
-- **Trojan Horses**: Excluded via graph-based risk analysis and Supporter Coherence checks.  
+- **Trojan Horses & Faction Infiltrators**:  
+  Detected using an **adaptive Z-score model** that identifies betrayal outliers relative to the dataset’s "political climate"
 
-Supporter Coherence ensures that no supporter holds high-severity objections to the final agreement, maintaining stability in the consensus.
+- **False Friends Detection**:  
+  Uses **bidirectional trust audits**  
+  Rejects relationships where:
+
+  betrayal > trust 
+
+  
+---
+
+### 3. Conflict Resolution Mechanism
+We mitigate disruptive proposals and conflicts using weighted logic:
+
+- **Poison Pills & Faction Wars**:  
+Evaluated using:
+
+objection_weight = severity × influence
+
+
+- Ensures that **high-influence objections** outweigh raw proposal priority  
+
+- **Alliance Hijack Prevention**:  
+Uses **graph-based risk analysis** to isolate stable alliance cores from disruptive nodes  
+
+---
+
+### 4. Consensus Coherence (Final Safeguard)
+The **Supporter Coherence Check** ensures internal consistency:
+
+- Prevents any representative with **high-severity objections** from being included in the `supporting_reps` list  
+- Eliminates risk of **Cascading Betrayal**  
+- Guarantees a **logically aligned and stable agreement**
+
+---
+
+### 5. Scalability
+- Designed to scale efficiently for **50+ representatives**  
+- Maintains a **Minimum Viable Consensus** even in high-rivalry environments  
+
+---
+
+### 6. Strategic Audit Dashboard (Frontend)
+The system includes a high-fidelity **Strategic Audit Dashboard** built with Dash and Plotly. It provides:
+
+- **Tactical Dark-Mode UI**: A military-intelligence aesthetic using JetBrains Mono for readability and authority.
+- **Decision Transparency**: Clear visual proof of why specific representatives or proposals were rejected (e.g., Trojan Horse vs. Z-Score outliers).
+- **Supporter Coherence Heatmap**: A sentiment-driven audit proving that every supporter genuinely backs the final agreement.
+- **Risk Mapping**: A graph-based topology that isolates "Danger Zones" from stable alliance cores.
